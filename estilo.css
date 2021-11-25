@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}    
+body{
+    font-family: 'Glory', sans-serif;
+    font-size: 18px;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    background-color: cadetblue;    
+}
+.a{
+    text-decoration: none;
+    color: white;
+}   
+
+.a2{
+    text-decoration: none;
+    color:cadetblue;
+} 
+.contenedorDerecho{
+    display: flex;
+    color: white;
+    justify-content: flex-end;
+    width: 100%;
+}
+.grillanovedades{
+    background-color:rgb(242, 242, 248);
+    height: 75%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nov1 nov2 nov3"
+                         "nov1 nov2 nov3";
+    column-gap: 2px;
+    row-gap: 2px;
+    justify-content: space-between;
+    align-content: stretch;
+    }
+    .nov1{
+        background-color:white;
+        grid-area: nov1;
+        align-content: center;
+    }                
+    
+    .nov2{
+        background-color:white;
+        grid-area: nov2;
+        align-content: left;
+        justify-content:space-around;
+    }                
+    .nov3{
+        background-color:white;
+        grid-area: nov3;
+        align-content: center;
+        font-family: 'Glory', sans-serif;
+
+
+        }  
+
+.regalos{
+background-color:rgb(242, 242, 248);
+height: 75%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+grid-template-areas: "reg1 reg2 reg3"
+                     "reg4 reg5 reg6";
+column-gap: 0px;
+row-gap: 0px;
+justify-content: center;
+align-content: center;
+}
+.reg1{
+background-color:white;
+grid-area: reg1;
+align-content: center;
+}                
+
+.reg2{
+background-color:white;
+grid-area: reg2;
+align-content: center;
+}             
+.reg3{
+background-color:white;
+grid-area: reg3;
+align-content: center;
+}             
+.reg4{
+background-color:white;
+grid-area: reg4;
+align-content: center;
+    }             
+.reg5{
+background-color:white;
+grid-area: reg5;
+align-content: center;
+}             
+.reg6{
+background-color:white;
+grid-area: reg6;
+align-content: center;
+}             
+.flexitems{
+    color: white;
+    width: 6rem;
+    height: 35px;
+    font-size: 1,4rem;
+    text-align: center;
+    line-height: 35px;
+    padding: 7px;
+
+}
+.flexitems:hover{
+    background-color:rgb(144, 186, 187);
+}   
+.logo{
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+.footer{
+    background-color:cadetblue;
+    width: 100%;
+    height: 20%;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    
+}
+.ocasiones{
+    background-color:rgb(242, 242, 248);
+    height: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "oc1 oc2"
+                         "oc3 oc4";
+    column-gap: 0px;
+    row-gap: 0px;
+    justify-content:center;
+    align-content: stretch;
+    }
+    .oc1{
+        background-color:white;
+        grid-area: oc1;
+        align-content: center;
+    }                
+    
+    .oc2{
+        background-color:white;
+        grid-area: oc2;
+        align-content: left;
+        justify-content:space-around;
+    }                
+    .oc3{
+        background-color:white;
+        grid-area: oc3;
+        align-content: center;
+    }
+        .oc4{
+            background-color:white;
+            grid-area: oc4;
+            align-content: center;
+    
+
+}
+.foto{
+    width: 285px;
+    height: 150px;
+    align-content: center;
+    justify-content: center;
+}
+.foto2 {
+    width: 100%;
+    height: 500px;
+}
+
+@media all and (max-width:700px){
+    .navbar{
+        flex-direction: column;
+    }
+    .contenedorDerecho{
+    flex-direction: column;
+    }
+    .flexitems{
+        text-align: center;
+        width: 100%;
+    }
