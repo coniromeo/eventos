@@ -4,11 +4,11 @@ const input = document.querySelector("#nombre");
 const form = document.querySelector("form");
 const main = document.querySelector("main.container");
 const turno = document.querySelector("turno");
-const div = document.querySelector("#eventos");
+const div = document.querySelector("form-check");
 
 const evento = 'submit' ;
   
-/*input.addEventListener(evento, inputEvent);
+input.addEventListener(evento, inputEvent);
 function inputEvent (e) {
     console.log(`nombre: "${e.nombre}`);
     console.log (`pedido: ${e.pedido}`);
@@ -18,14 +18,13 @@ function inputEvent (e) {
     div.innerHTML = `Escuchando el evento <strong> ${evento} </strong>`;
     
 }
-*/
 
 //esto sirve para ver donde hace click el usuario
-/*
+
 main.addEventListener('click', e =>{
     console.log(e.target);
 })
-*/
+
 
 form.addEventListener(evento, formSubmit);
 function formSubmit(e) {
@@ -41,3 +40,11 @@ function formSubmit(e) {
 		div.innerHTML = "Formulario enviado";
 	}
 }
+
+
+const p = document.createElement("p");
+p.textContent ='Gracias ${input} por pedir ${pedido} al Bolson! Te lo vamos a entregar ${turno}';
+
+const div2 = document.querySelector("div.soloagregartexto");
+div2.appendChild(p);
+console.log(div);
