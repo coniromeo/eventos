@@ -1,22 +1,25 @@
 const h2 = document.querySelector("h2");
+const pedido = document.querySelector("pedido");
 const input = document.querySelector("#nombre");
 const form = document.querySelector("form");
 const main = document.querySelector("main.container");
+const turno = document.querySelector("turno");
 const div = document.querySelector("#eventos");
 
-const evento = 'input' ;
+const evento = 'submit' ;
   
-input.addEventListener(evento, inputEvent);
+/*input.addEventListener(evento, inputEvent);
 function inputEvent (e) {
-    console.log('Code: "${e.Code}');
-    console.log ('keyCode: ${e.Keycode}');
-    console.log('key: ${e.key}');
-    console.log('which: ${e.which}');
-    console.log ('=====================');
+    console.log(`nombre: "${e.nombre}`);
+    console.log (`pedido: ${e.pedido}`);
+    console.log(`turno: ${e.turno}`);
+    console.log (`=====================`);
     const div = document.querySelector("#eventos");
-    div.innerHTML = 'Escuchando el evento <strong> ${evento} </strong>';
+    div.innerHTML = `Escuchando el evento <strong> ${evento} </strong>`;
     
 }
+*/
+
 //esto sirve para ver donde hace click el usuario
 /*
 main.addEventListener('click', e =>{
@@ -24,7 +27,7 @@ main.addEventListener('click', e =>{
 })
 */
 
-/*form.addEventListener(evento, formSubmit);
+form.addEventListener(evento, formSubmit);
 function formSubmit(e) {
 	e.preventDefault();
 
@@ -38,4 +41,3 @@ function formSubmit(e) {
 		div.innerHTML = "Formulario enviado";
 	}
 }
-*/
