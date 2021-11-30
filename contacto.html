@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description=" content="Empresa dedicada a ofrecer regalos con venta ONLINE, Cajas ideadas para sorprender en cumpleaños, aniversarios y en todo momento">
-    <meta name="keywords"  content="Regalos Online, Presentes, Cumpleaños, Aniversarios, Regalos Personaizados, Sets de Regalo, Tienda Virtual, Tienda Online">
-    <title>Regalos Online. Tienda de presentes.</title>
+    <meta name="keywords"  content="Natural, Frutas, verduras, sano, salud, saludable">
+    <title>El Bolson. Frutas y verduras para vos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Glory:wght@200&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
             <div class ="flexitems"><a class="a" href="secciones/regalos.html">Quienes Somos</a></div>
             <div class ="flexitems"><a class="a" href="secciones/ocasiones.html">Promos</a></div>
             <div class ="flexitems"><a class="a" href="secciones/novedades.html">Beneficios</a></div>
-            <div class ="flexitems"><a class="a" href="secciones/contacto.html">Contacto</a></div>
+            <div class ="flexitems"><a class="a" href="contacto.html">Contacto</a></div>
                        
         </div>
     </div>
@@ -31,41 +31,36 @@
         <br>
 		<h2>Gracias por contactarnos</h2>
 
-		<form>
-			<div class="mb-3">
-				<label class="form-label" for="nombre">Nombre: </label>
-				<input class="form-control" type="text" id="nombre" name="nombre">
-			</div>
-			<div class="mb-3">
-				<label class="form-label" for="pedido">Pedido </label>
-				<select class="form-select" name="pedido" id="pedido">
-					<option value="seleccione" selected disabled>- Seleccione -</option>
-					<option value="Frutas">Frutas</option>
-					<option value="Verduras">Verduras</option>
-					<option value="Frutas y Verduras">Frutas y Verduras</option>
-				</select>
-			</div>
+        <div id="caja">
+		<form name="rellenar" action="#" >
+			<h2>Generador de Pedidos</h2>
+   <p> Nombre: <input name="titulo" type="text"/> </p>
+   <p> Direccion: <input name="direccion" type="text"/> </p> 
+   <p> Telefono: <input name="telefono" type="text"/> </p> 
+   
+   <p> Que Queres Pedir? </p>
+    <select class="form-select" name="pedido" id="pedido">
+        <option value="seleccione" selected disabled>- Seleccione -</option>
+        <option value="Frutas">Frutas</option>
+        <option value="Verduras">Verduras</option>
+        <option value="Frutas y Verduras">Frutas y Verduras</option>
+    </select>
+    <p> En que horario te entregamos? </p>
+    <select class="form-select" name="horario" id="horario">
+        <option value="seleccione" selected disabled>- A que hora te lo llevamos? -</option>
+        <option value="mañana">A la mañana</option>
+        <option value="tarde">A la tarde</option>
+        <option value="noche">A la noche</option>
+    </select>
+    
+   <p>Aclaraciones</p>
+   <p><textarea name="texto"></textarea></p>
+   <p><input name="ver" type="button" value="Enviar" />
+</form>
+</div>
+</main>
 
-			<div class="form-check">
-				<input class="form-check-input" type="radio" name="turno" id="manana" value="manana">
-				<label class="form-check-label" for="manana">Entrega por la Mañana</label>
-			</div>
-			<div class="form-check">
-				<input class="form-check-input" type="radio" name="turno" id="tarde" value="tarde">
-				<label class="form-check-label" for="tarde">Entrega por la Tarde</label>
-			</div>
-			<div class="form-check mb-3">
-				<input class="form-check-input" type="radio" name="turno" id="noche" value="noche">
-				<label class="form-check-label" for="noche">Entrega por la Noche</label>
-			</div>
-			<div class="col-12">
-				<button class="btn btn-primary" id="submit" type="submit">Enviar</button>
-			</div>
-		</form>
-
-		<div class='mt-3 text-center' id="eventos"></div>
-	</main>
-<script src="eventos.js">
+<script src="eventos2.js">
 </script>
 
 </body>
